@@ -1,0 +1,7 @@
+<launch>
+  <node name="task_manager_node" pkg="task_manager" type="task_manager_node" output="screen" >
+              <param name = "lookahead_distance" value = "1.5" />
+              <param name = "linear_velocity" value = "0.4" />
+              <param name = "max_rotational_velocity" value = "0.4" />
+    </node>
+</launch>

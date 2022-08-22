@@ -1,0 +1,6 @@
+# request
+string map_name
+inspur_msgs/AreaPubData[] area_info
+---
+# response
+uint32 result

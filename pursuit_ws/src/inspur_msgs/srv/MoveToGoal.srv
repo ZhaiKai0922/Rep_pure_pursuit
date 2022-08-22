@@ -1,0 +1,14 @@
+# request
+int8 CHARGE_AUTO=0
+int8 GOAL=1
+int8 RKE_NAV=2
+int8 CANCEL_STOP=3
+int8 CHARGE=4
+
+int8 type
+geometry_msgs/Pose pose
+string map_name
+int8 pile_id
+---
+# response
+uint32 result

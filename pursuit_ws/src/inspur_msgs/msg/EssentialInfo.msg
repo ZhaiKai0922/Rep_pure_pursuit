@@ -1,0 +1,17 @@
+float64 power
+float64 temperature
+float64 cycles
+bool motor
+bool charging
+bool bumper
+bool emergency_stop
+bool left_drop
+bool right_drop
+bool middle_drop
+bool left_infrared
+bool right_infrared
+bool left_wheel
+bool right_wheel
+float64 line_speed
+float64 angular_speed
+geometry_msgs/Pose transform

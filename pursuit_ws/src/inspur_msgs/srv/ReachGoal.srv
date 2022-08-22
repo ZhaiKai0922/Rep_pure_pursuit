@@ -1,0 +1,6 @@
+# request
+int32 result
+string result_information
+---
+# response
+bool response

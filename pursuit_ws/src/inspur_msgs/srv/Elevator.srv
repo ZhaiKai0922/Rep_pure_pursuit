@@ -1,0 +1,11 @@
+int8 type #短横线上边部分是服务请求的数据
+string robotCode
+string source_floor
+string elevator_id
+string elevator_door
+string dest_floor
+string direction
+string door_id
+--- #短横线下面是服务回传的内容
+string feedback
+string replycode

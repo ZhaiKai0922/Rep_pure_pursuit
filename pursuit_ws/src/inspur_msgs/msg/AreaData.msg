@@ -1,0 +1,9 @@
+# 1：禁行区域
+# 2：虚拟墙
+# 3：玻璃墙
+# 4：电梯口
+# 5：减速带
+# 6：斜坡
+int8 area_type
+bool closed
+inspur_msgs/Vec2DFlt32[] area_data

@@ -1,0 +1,13 @@
+# request
+int8 type
+float32 line
+float32 angular
+float32 turning_radius
+float32 wheelbase
+---
+# response
+uint32 result
+float32 line_ack
+float32 angular_ack
+float32 turning_radius_ack
+float32 wheelbase_ack

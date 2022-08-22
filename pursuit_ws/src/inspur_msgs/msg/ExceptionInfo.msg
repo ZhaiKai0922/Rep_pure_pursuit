@@ -1,0 +1,9 @@
+bool relocalization
+bool relocalization_status
+bool relocalization_succeed
+bool path_planner_status
+bool scan_status
+bool imu_status
+bool can_status
+bool control_board_can_status
+bool battery_can_status

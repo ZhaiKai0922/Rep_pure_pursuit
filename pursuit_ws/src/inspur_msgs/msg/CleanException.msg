@@ -1,0 +1,10 @@
+bool relocalization
+bool relocalization_status
+bool scan_status
+bool imu_status
+bool can_status
+bool turn_status
+bool run_status
+bool blower_status
+bool slop_tank_status
+bool water_tank_status

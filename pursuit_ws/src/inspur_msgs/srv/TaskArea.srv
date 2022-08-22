@@ -1,0 +1,12 @@
+# request
+# 1：获取任务内所有路径总面积
+# 2：获取当前执行路径面积及已清扫面积
+int8 type
+string map_name
+inspur_msgs/TaskAreaData[] tast_area
+---
+# response
+uint32 total_area
+uint32 task_area
+uint32 clean_area
+uint32 result

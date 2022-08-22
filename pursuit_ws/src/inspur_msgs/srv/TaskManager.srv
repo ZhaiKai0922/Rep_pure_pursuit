@@ -1,0 +1,10 @@
+# request
+string map_name
+int8 path_type
+int8 path_id
+int8 clean_mode
+bool clean_en
+int8 status
+---
+# response
+uint32 result

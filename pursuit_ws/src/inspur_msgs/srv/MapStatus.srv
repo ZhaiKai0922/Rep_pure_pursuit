@@ -1,0 +1,10 @@
+# request
+int8 BUILD_STATUS=0
+int8 SAVE_STATUS=1
+
+int8 type
+string map_name
+---
+# response
+uint32 result
+int8 status

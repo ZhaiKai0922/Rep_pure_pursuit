@@ -1,0 +1,15 @@
+int8 power
+bool charging 
+bool bumper
+bool emergency_stop
+bool turn 
+bool accele
+bool emergency_braking
+bool drive_mode
+bool work_en
+int8 work_mode
+bool driver
+int8 water
+float64 line_speed
+float64 angular_speed
+geometry_msgs/Pose transform
