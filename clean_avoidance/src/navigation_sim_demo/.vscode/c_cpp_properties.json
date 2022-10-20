@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/zk/zk/robot/ROS_Academy_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/zk/zk/robot/ROS_Academy_ws/src/ROS-Academy-for-Beginners/dependlib/hector_slam/hector_geotiff/include/**",
+        "/home/zk/zk/robot/ROS_Academy_ws/src/ROS-Academy-for-Beginners/dependlib/hector_slam/hector_map_tools/include/**",
+        "/home/zk/zk/robot/ROS_Academy_ws/src/ROS-Academy-for-Beginners/dependlib/hector_slam/hector_mapping/include/**",
+        "/home/zk/zk/robot/ROS_Academy_ws/src/ROS-Academy-for-Beginners/dependlib/hector_slam/hector_marker_drawing/include/**",
+        "/home/zk/zk/robot/ROS_Academy_ws/src/ROS-Academy-for-Beginners/dependlib/openslam_gmapping/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

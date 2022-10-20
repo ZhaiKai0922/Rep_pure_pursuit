@@ -1,0 +1,1 @@
+set(ORDERED_PATHS "/home/zk/zk/obstacle_avoidance/clean_avoidance/devel/lib;/opt/ros/melodic/lib")

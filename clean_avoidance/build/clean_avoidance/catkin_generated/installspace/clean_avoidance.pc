@@ -1,0 +1,8 @@
+prefix=/home/zk/zk/obstacle_avoidance/clean_avoidance/install
+
+Name: clean_avoidance
+Description: Description of clean_avoidance
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

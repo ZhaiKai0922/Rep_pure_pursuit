@@ -1,0 +1,10 @@
+#goal definition
+float64 goal_x
+float64 goal_y
+---
+#result definition
+float64 result_x
+float64 result_y
+---
+float64 feedback_x
+float64 feedback_y

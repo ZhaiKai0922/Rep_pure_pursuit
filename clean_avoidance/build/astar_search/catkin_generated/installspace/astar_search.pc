@@ -1,0 +1,8 @@
+prefix=/home/zk/zk/obstacle_avoidance/clean_avoidance/install
+
+Name: astar_search
+Description: Description of astar_search
+Version: 1.11.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lastar_search
+Requires: roscpp tf tf_conversions pcl_ros sensor_msgs geometry_msgs

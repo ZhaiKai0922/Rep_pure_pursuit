@@ -1,0 +1,19 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/zk/zk/obstacle_avoidance/clean_avoidance/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/zk/zk/obstacle_avoidance/clean_avoidance/src/clean_avoidance/include/**",
+        "/home/zk/zk/obstacle_avoidance/clean_avoidance/src/costmap_2d/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

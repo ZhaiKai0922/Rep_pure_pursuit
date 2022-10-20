@@ -1,0 +1,37 @@
+<launch>
+    <!-- Map server -->
+  <arg name="map_file" default="$(find slam_sim_demo)/maps/ISCAS_Museum.yaml"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+
+    <!-- Localization -->
+  <arg name="initial_pose_x" default="5.0"/>
+  <arg name="initial_pose_y" default="1.0"/>
+  <arg name="initial_pose_a" default="-3.1"/>
+  <arg name="custom_amcl_launch_file" default="$(find navigation_sim_demo)/launch/include/robot_amcl.launch.xml"/> 
+
+  <include file="$(arg custom_amcl_launch_file)">
+    <arg name="initial_pose_x" value="$(arg initial_pose_x)"/>
+    <arg name="initial_pose_y" value="$(arg initial_pose_y)"/>
+    <arg name="initial_pose_a" value="$(arg initial_pose_a)"/>
+  </include>
+
+  <arg name="odom_frame_id"   default="odom"/>
+  <arg name="base_frame_id"   default="base_footprint"/>
+  <arg name="global_frame_id" default="map"/>
+  <arg name="odom_topic" default="odom" />
+  <arg name="laser_topic" default="scan" />
+
+  <node name="clean_avoidance_double_node" pkg="clean_avoidance" type="clean_avoidance_double_node" output="screen" >
+    <rosparam file="$(find navigation_sim_demo)/param/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find navigation_sim_demo)/param/costmap_common_params.yaml" command="load" ns="local_costmap" />   
+    <rosparam file="$(find navigation_sim_demo)/param/local_costmap_params.yaml" command="load" />   
+    <rosparam file="$(find navigation_sim_demo)/param/global_costmap_params.yaml" command="load" />
+
+    <!-- reset frame_id parameters using user input data -->
+    <param name="global_costmap/global_frame" value="$(arg global_frame_id)"/>
+    <param name="global_costmap/robot_base_frame" value="$(arg base_frame_id)"/>
+    <param name="local_costmap/global_frame" value="$(arg odom_frame_id)"/>
+    <param name="local_costmap/robot_base_frame" value="$(arg base_frame_id)"/>
+
+    </node>
+</launch>
