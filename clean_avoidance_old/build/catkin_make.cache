@@ -1,2 +1,0 @@
-astar_search:clean_avoidance:costmap_2d:global_planner:nav_core:navfn:navigation_sim_demo:slam_sim_demo
--DCATKIN_WHITELIST_PACKAGES=clean_avoidance -DCATKIN_DEVEL_PREFIX=/home/zk/zk/obstacle_avoidance/clean_avoidance/devel -DCMAKE_INSTALL_PREFIX=/home/zk/zk/obstacle_avoidance/clean_avoidance/install -G Unix Makefiles

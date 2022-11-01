@@ -1,0 +1,7 @@
+first_search_waypoints_delta: 30
+search_waypoints_delta: 15
+search_waypoints_size: 80
+reduce_start_points: 6
+number_greater_index: 11
+number_less_index: 11
+cycle_reduce_start_points: 4
