@@ -147,7 +147,6 @@ void PurePursuit::ComputeVelocities()
     {
       if (Distance(path_->poses[idx_].pose.position, tf.transform.translation) > ld_)
       {
-
         // Transformed lookahead to base_link frame is lateral error
         KDL::Frame F_bl_ld = TransformToBaseLink(path_->poses[idx_].pose, tf.transform);
         lookahead_.transform.translation.x = F_bl_ld.p.x();
